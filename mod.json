@@ -1,0 +1,30 @@
+{
+	"geode": "5.0.0",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "prank.bufferclick",
+	"name": "Buffer Click",
+	"version": "v1.0.0",
+	"developer": "you",
+	"description": "Delays an early jump click (a few physics steps) until the cube lands, so it fires on the exact frame.",
+	"settings": {
+		"enabled": {
+			"type": "bool",
+			"name": "Enabled",
+			"default": true
+		},
+		"window": {
+			"type": "int",
+			"name": "Buffer window (240 TPS steps)",
+			"description": "How many steps early a click may be and still get delayed to the perfect step.",
+			"default": 6,
+			"min": 1,
+			"max": 30,
+			"control": { "input": true, "slider": true }
+		}
+	}
+}
